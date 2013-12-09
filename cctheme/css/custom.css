@@ -2111,9 +2111,27 @@ body {
 .user-dashboard {
   float: right; }
   .user-dashboard a {
-    color: #cdd8ec;
+    background: rgba(255, 255, 255, 0.38);
+    padding: 2px 2px;
+    color: rgba(255, 255, 255, 0.75);
     font-size: 20px;
-    text-shadow: 0 0 4px #466caf; }
+    text-shadow: none;
+    width: 27px;
+    text-align: center;
+    display: inline-block;
+    background: #247fbc;
+    padding: 3px 4px;
+    color: white;
+    font-size: 17px;
+    text-shadow: none;
+    width: 28px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 2px;
+    -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25); }
 
 .node-page .field-type-image {
   border: none;
