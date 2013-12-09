@@ -22,7 +22,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 30px;
     z-index: 9;
 
     .views-slideshow-pager-field-item{
@@ -30,7 +30,7 @@
       width: 12px;
       @include gradient-vertical(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.3));
       background-color: transparent;
-      margin: 0px 2px;
+      margin: 0px 0px;
       display: inline-block;
       cursor: pointer;
       &:hover{
