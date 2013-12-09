@@ -1,0 +1,214 @@
+.page-forum{
+  .panels-flexible-region-new-center {
+    width: 100%;
+  }
+
+  .forum-table-wrap{
+
+    .forum-table-superheader{
+      border: none;
+      background: radial-gradient(ellipse at center, #4c97c8 0%, #247fbc 100%);
+      color: white;
+      .forum-table-name{
+        color: white;
+      }
+    }
+  }
+
+  #forum .forum-table{
+    border: none;
+    width: 100%;
+    thead tr{
+      border: none;
+      background: none;
+      th{
+        background: rgba(255, 255, 255, 0.15);
+        border: none;
+      }
+    }
+    tbody {
+      border: none;
+      tr{
+        border: none;
+        background: none;
+
+        td{
+          border: none;
+          border-bottom: 1px solid rgba(226, 226, 226, 0.21);
+          color: white;
+        }
+      }
+    }
+
+    .forum-table-topics thead tr{
+      border: none;
+    }
+  }
+  a.af-button-large{
+    display: inline-block;
+    background-color: #aa0406;
+    background-repeat: repeat-x;
+    @include gradient-directional(#d62a38, #aa0406, 135deg);
+    border: none;
+    box-shadow: none;
+    font-family: Roboto Slab;
+    text-shadow: none;
+    color: white;
+    height: inherit;
+    padding: 4px 3px;
+    box-shadow: 1px 1px #7a0203, 2px 2px #7a0203, 3px 3px #7a0203, 4px 4px 7px rgba(0, 0, 0, 0.5);
+    margin-bottom: 16px;
+    &:hover{
+      text-decoration: none;
+      color: white;
+      @include gradient-directional(#c32936, #930406, 135deg);
+    }
+  }
+  .forum-topic-legend{
+    color: white;
+  }
+  .pane-forum-topic-list-sort{
+    clear: both;
+  }
+}
+
+
+//Forum Post
+#forum-topic-header{
+  color: white;
+
+  .topic-reply-allowed a.af-button-large,
+  .last-post-link a.af-button-large{
+    @include gradient-radial(#3b8bc0, #2B7FB8);
+    background-repeat: no-repeat;
+    color: white;
+    border-radius: 2px;
+    border: none;
+    span{
+      font-family: "Roboto Slab";
+    }
+  }
+}
+
+.comment-wrapper{
+  .forum-post-wrapper .forum-post-panel-main .forum-post-title{
+    font-size: 16px;
+    padding: 6px 11px;
+    a{
+      color: white;
+    }
+  }
+  h2.title{
+    background: none;
+    border: none;
+    color: white;
+    font-size: 26px;
+    padding: 6px 1px 0;
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+  .comment-form{
+    background: rgba(255, 255, 255, 0.12);
+    padding: 10px;
+    border: none;
+    color: white;
+    fieldset{
+      border: none;
+    }
+    .form-submit{
+      display: inline-block;
+      background-repeat: repeat-x;
+      border: none;
+      box-shadow: none;
+      font-family: Roboto Slab;
+      text-shadow: none;
+      height: inherit;
+      padding: 8px 12px;
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+
+    .edit-submit .form-submit{
+      @include gradient-directional(#d62a38, #aa0406, 135deg);
+      color: white;
+      box-shadow: 1px 1px #7a0203, 2px 2px #7a0203, 3px 3px #7a0203, 4px 4px 7px rgba(0, 0, 0, 0.5);
+
+      &:hover{
+        @include gradient-directional(#aa252f, #780406, 135deg);
+        color: white;
+      }
+    }
+    .edit-preview .form-submit{
+      background: none;
+      color: white;
+      text-transform: none;
+
+      &:hover{
+        text-decoration: underline;
+        color: white;
+      }
+    }
+  }
+}
+
+div.forum-post{
+  border: none;
+  .forum-post-info{
+    border: none;
+    background: none;
+    color: white;
+    padding: 5px 2px;
+    font-size: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+
+    .forum-post-number a{
+      color: #7bb9e0 !important;
+    }
+  }
+  .forum-post-wrapper{
+    background: none;
+    border: none;
+    position: relative;
+    height: auto;
+
+    .forum-post-panel-sub{
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 145px;
+      background: rgb(219, 225, 231);
+    }
+    .forum-post-panel-main{
+      background: rgba(255, 255, 255, 0.15);
+      color: white;
+      border: none;
+      .forum-post-content{
+        padding: 14px 12px;
+        font-size: 13px;
+      }
+      .forum-post-title{
+        font-size: 22px;
+        padding: 11px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.21);
+      }
+    }
+  }
+
+  .forum-post-footer{
+    border: none;
+
+    a.af-button-small,
+    .last-post-link a.af-button-large{
+      @include gradient-radial(#3b8bc0, #2B7FB8);
+      background-repeat: no-repeat;
+      color: white;
+      border-radius: 2px;
+      border: none;
+      span{
+        font-family: "Roboto Slab";
+      }
+    }
+  }
+
+}

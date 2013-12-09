@@ -1,0 +1,104 @@
+.page-poker-lexikon{
+
+  .attachment{
+    .views-summary a{
+      @include gradient-radial(#4c97c8, #247fbc);
+      padding: 2px 8px;
+      margin: 5px 1px;
+      display: inline-block;
+      color: rgba(255, 255, 255, 0.65);
+      &:hover{
+        @include gradient-radial(#3b8bc0, #2071a7);
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+  .views-row{
+    a{
+      color: white;
+      font-size: 18px;
+      background: rgba(255, 255, 255, 0.15);
+      padding: 13px 18px;
+      display: block;
+      margin-bottom: 5px;
+
+      @include transition(background .3s);
+
+      &:hover{
+        background: rgba(255, 255, 255, 0.25);
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.lexicon-letter{
+  color: white;
+  font-size: 85px;
+  line-height: 1em;
+  margin: 12px 5px -2px 5px;
+  margin-bottom: -2px;
+  opacity: .2;
+  font-family: "roboto slab";
+}
+
+.lexicon-links{
+  background: none;
+  text-align: initial;
+  padding: 5px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+
+  .lexicon-item{
+    background: #1A2135;
+    padding: 1px 0;
+    display: inline-block;
+    color: whitesmoke;
+    line-height: 1.3em;
+    font-size: 15px;
+    width: 23px;
+    text-align: center;
+    box-shadow: 1px 1px black;
+    text-shadow: 0 2px 2px black;
+    //&.active{
+    //  background: #930406;
+    //}
+    @include transition(all 0.3s);
+
+    &:hover{
+      text-decoration: none;
+      background: #B7BBC9;
+      color: #1A2135;
+      text-shadow: none;
+    }
+  }
+}
+
+.lexicon-description,
+.lexicon-introduction{
+  font-size: 16px;
+  color: white;
+}
+
+.lexicon-list{
+  dl{
+    dt{
+      @extend .white-box;
+      margin: 0;
+      padding-bottom: 0;
+      line-height: 1em;
+      font-size: 20px;
+      color: white;
+      a{
+        color: inherit;
+      }
+    }
+    dd{
+      @extend .white-box;
+      margin: 0;
+      margin-bottom: 14px;
+      padding-top:10px;
+    }
+  }
+}

@@ -1,0 +1,124 @@
+.page-strategieartikel,
+.page-strategy-articles,
+.page-strategie{
+
+  #main-content>.contextual-links-region>.contextual-links-wrapper>.contextual-links-trigger {
+    margin-top: -15px;
+  }
+
+
+  .strategy-description,
+  #block-block-17,
+  #block-block-14{
+    color: white;
+    font-size: 1.2em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    .block-title{
+      display: none;
+    }
+    a.lexicon-term{
+      color: #6FBAEC;
+      border-color: #6FBAEC;
+    }
+  }
+
+  .strategy-category-page{
+    .views-row .views-field-title{
+      line-height: 30px;
+      font-size: 20px;
+      margin-left: 65px;
+    }
+  }
+
+  .views-row{
+    position: relative;
+    margin-bottom: 15px !important;
+
+    @include transition(background .3s);
+
+    &:hover{
+      background: rgba(255, 255, 255, 0.25);
+    }
+
+
+    .views-field-field-strategy-number{
+      position: absolute;
+      font-size: 39px;
+      line-height: .9em;
+      font-family: Roboto Slab;
+      top: 6px;
+      left: 6px;
+      bottom: 6px;
+      width: 1em;
+      text-align: center;
+      padding: 11px 12px 12px;
+      color: white;
+      @include gradient-radial(#4c97c8, #247fbc);
+    }
+
+    .views-field-title,
+    .header h2{
+      font-size: 36px;
+      margin-left: 62px;
+      color: white;
+      padding: 3px 0;
+      margin: 0;
+      a{
+        color: inherit;
+      }
+    }
+  }
+}
+
+.node-strategy-article{
+  p{
+    font-size: 1.2em;
+  }
+}
+
+.node-type-strategy-article #main-content .block-inner > .block-content > .article{
+  @extend .white-border-box;
+  color: rgb(22, 55, 104);
+}
+
+
+.page-strategiearikel{
+  #main-content .block-inner{
+    .article{
+      @include transition(background .3s);
+
+      &:hover{
+        background: rgba(255, 255, 255, 0.25);
+      }
+
+      > .submitted{
+        color: silver;
+      }
+
+      .node-title a{
+        color: white;
+      }
+
+      .field-type-taxonomy-term-reference{
+        margin: 0;
+        ul li a{
+          border:none;
+          color: #000;
+          display: inline;
+          padding: 1px 10px;
+          background: rgba(255, 255, 255, 0.63);
+          font-family: Roboto Condensed;
+          font-weight: 400;
+          font-size: 14px;
+
+          &:hover{
+            border: none;
+            background: rgba(255, 255, 255, 0.75);
+          }
+        }
+      }
+    }
+  }
+}
+
+#article-190, #article-191{display: none;}

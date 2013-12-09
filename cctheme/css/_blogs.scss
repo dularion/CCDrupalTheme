@@ -1,0 +1,41 @@
+.page-coach-blogs,
+.page-member-blogs{
+  #main-content .block-inner{
+    @extend .reset-white-border-box;
+
+    .article{
+      @include transition(background .3s);
+
+      &:hover{
+        background: rgba(255, 255, 255, 0.25);
+      }
+
+      > .submitted{
+        color: silver;
+      }
+
+      .node-title a{
+        color: white;
+      }
+
+      .field-type-taxonomy-term-reference{
+        margin: 0;
+        ul li a{
+          border:none;
+          color: #000;
+          display: inline;
+          padding: 1px 10px;
+          background: rgba(255, 255, 255, 0.63);
+          font-family: Roboto Condensed;
+          font-weight: 400;
+          font-size: 14px;
+
+          &:hover{
+            border: none;
+            background: rgba(255, 255, 255, 0.75);
+          }
+        }
+      }
+    }
+  }
+}

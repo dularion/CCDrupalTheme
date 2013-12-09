@@ -1,0 +1,91 @@
+#panel-second-wrapper .call-to-action{
+  margin: 0 -1.5em;
+  .block-inner{
+    background: none;
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5)
+  }
+  .block-content{
+    span{
+      padding: 0 !important;
+      float: none !important;
+      vertical-align: initial !important;
+      display: inline;
+      margin: 0;
+      width: auto;
+    }
+    p{
+      width: 64%;
+      color: white;
+      text-align: center;
+      font-family: Roboto;
+      font-weight: 300;
+      float: left;
+      line-height: 1.5em;
+      margin: 0;
+      font-size: 16px;
+      padding-top: 17px;
+
+      >.highlight{
+        font-weight: 700;
+        font-size: 1.2em;
+      }
+    }
+
+
+  }
+}
+
+
+#panel-second-wrapper .call-to-action .block-content > a,
+.call-to-action-btn{
+  display: inline-block;
+  @include gradient-directional(#d62a38, #aa0406, 135deg);
+  border: none;
+  box-shadow: none;
+  font-family: Roboto Slab;
+  text-shadow: none;
+  color: white;
+  font-weight: 300;
+  font-size: 16px;
+  text-align: center;
+  margin-right: 8px;
+  padding: 1em;
+  &:hover{
+    text-decoration: none;
+    color: white;
+    @include gradient-directional(#c32936, #930406, 135deg);
+  }
+  >.highlight{
+    font-weight: 700;
+    font-size: 1.2em;
+  }
+}
+
+
+.region-sidebar-first{
+  >.call-to-action{
+    text-align: center;
+    font-size: 14px;
+
+    .block-title{
+      display: none;
+    }
+
+    .block-inner{
+      margin-bottom: 0;
+    }
+
+    position: absolute;
+    top: 4px;
+    width: 260px !important;
+    right: 0;
+    color: white;
+
+    .call-to-action-btn{
+      $shadow: 1px 1px #49030e, 2px 2px #49030e,3px 3px #49030e,4px 4px #49030e,4px 4px 5px black;
+      @include box-shadow($shadow);
+    }
+  }
+}

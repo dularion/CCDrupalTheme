@@ -1,0 +1,253 @@
+.node-type-coach-profile{
+  .article,
+   .node-coach_profile-form{
+     @extend .white-border-box;
+   }
+
+  #main-wrapper{
+    padding-top: 24px;
+  }
+
+  #page-title{
+    display: none;
+  }
+
+  .node-title a{
+    color: white;
+    font-size: 1.3em;
+    font-weight: 300;
+  }
+
+  .article{
+    .coach-info-wrapper{
+      @include clearfix;
+      .info-fields{
+        float: left;
+        margin-top: -9px;
+
+        .field-items,.field-label{
+          font-size: 15px;
+          line-height: 2em;
+          font-family: roboto;
+        }
+
+        .field-label{
+          width: 90px;
+        }
+      }
+    }
+
+    .field-name-field-photo{
+      border: none;
+      padding: 0;
+      width: 38%;
+      float: left;
+      margin-right: 15px;
+      img{
+        height: inherit;
+      }
+    }
+
+    .field-name-field-path-to-success{
+      clear: both;
+      margin-right: 8%;
+    }
+
+    .field-type-text-long {
+      float: left;
+      width: 45%;
+      margin-top: 30px;
+      h3{
+        font-size: 24px;
+      }
+
+      .field-item{
+        font-size: 13px;
+        line-height: 1.6em;
+        margin-top: 10px;
+      }
+    }
+
+    .button-bar{
+      clear: both;
+      margin-top: 30px;
+      
+      .btn{
+        @include transition(background .5s);
+        @include gradient-radial(#3e5379, #2e4061);
+        border: none;
+        @include border-radius(0);
+        padding: 11px 19px;
+        min-width: 13.6%;
+        >i{
+          margin-right: 6px;
+          font-size: 22px;
+          line-height: 7px;
+          position: relative;
+          top: 2px;
+        }
+        &:hover{
+          @include gradient-radial(#4c618d, #354f76);
+        }
+
+        &.facebook{
+          @include gradient-radial(#4d68a2, #3c5a99);
+        }
+        &.twitter{
+          @include gradient-radial(#29b6ea, #0aa0d7);
+        }
+      }
+    }
+
+
+    .field-name-field-photo-gallery{
+      .field-item{
+        float: left;
+        width: 100px;
+        img{height: inherit;}
+      }
+    }
+  }
+
+  .galleryformatter-greenarrows .gallery-thumbs li img{
+    height: auto;
+  }
+}
+
+.image-widget-data .file .file-icon{
+  width: auto;
+}
+
+.page-coach-profile{
+  .field-name-field-photo{
+    width: 40%;
+    border: none;
+    padding: 0;
+    float: left;
+    margin: 0;
+    height: 80px;
+    overflow: hidden;
+    img{height: auto;}
+  }
+
+  .menu.node-links{
+    display: none;
+    position: absolute;
+    bottom: -15px;
+    right: -10px;
+
+    .node-readmore a{
+      padding: 5px 7px;
+      font-size: 9px;
+    }
+  }
+
+  .view-content{
+    > .views-row{
+      //@extend .white-border-box;
+      float: left;
+      width: 24%;
+      margin-right: 2%;
+      padding-right: 3%;
+      margin-bottom: 21px;
+      border-width: 5px;
+
+      background: rgba(255, 255, 255, 0.15);
+      color: white;
+      padding: 23px 3%;
+
+     @include transition(background .3s);
+
+      &:hover{
+        background: rgba(255, 255, 255, 0.25);
+      }
+
+
+
+      .article{
+        margin: 0;
+      }
+      .node-title{
+        font-size: 2em;
+        a{color: white;}
+      }
+
+      .button-bar{
+        float: left;
+        margin-left: 10px;
+        font-size: 15px;
+
+        >a{
+          display: block;
+          color: white;
+          margin-bottom: 3px;
+
+          >i{
+            font-size: 1.6em;
+            position: relative;
+            top: 3px;
+            margin-right: 3px;
+            text-decoration: none;
+            width: 21px;
+            display: inline-block;
+            text-align: center;
+          }
+          &:hover{
+            >i{
+              text-decoration: none;
+            }
+          }
+        }
+      }
+
+      &:nth-child(3n){
+        margin-right: 0;
+      }
+    }
+
+  }
+
+}
+
+@media (max-width: 480px){
+  .node-type-coach-profile{
+    .node-title a {
+      font-size: 3em;
+    }
+    .article{
+      position: relative;
+
+      .field-name-field-photo{
+        width: 60%;
+        float: none;
+      }
+      .coach-info-wrapper{
+        .info-fields{
+          margin-top: 0;
+          float: none;
+        }
+      }
+      .button-bar{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 60px;
+        margin-top: 0;
+
+        .btn{
+          padding: 27px 23px;
+          min-width: 0px;
+          width: 15px;
+          margin-bottom: 3px;
+
+          span{display: none;}
+        }
+      }
+
+      .field-type-text-long{
+        float: none;
+        width: auto;
+      }
+    }
+  }
+}

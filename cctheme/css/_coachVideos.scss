@@ -1,0 +1,151 @@
+.page-videos-coach-videos,
+.page-videos-member-videos{
+  #main-content{
+
+    .view-content{
+      .views-row{
+        //@extend .white-border-box;
+
+        @include transition(background .3s);
+
+        &:hover{
+          background: rgba(255, 255, 255, 0.25);
+        }
+
+        .group-left{
+          width: 35%;
+        }
+
+        .group-right{
+          width: 65%;
+
+          h2{
+            font-family: BebasNeueRegular;
+            font-size: 3em;
+            font-weight: normal;
+            margin: 0;
+          }
+        }
+
+
+
+        .header{
+          margin-left: 30%;
+          padding-left: 10px;
+          a{color: white;
+          &:hover{
+            text-decoration: underline;
+          }}
+        }
+
+
+        &:nth-child(3n){
+          margin-right: 0;
+        }
+
+        .field-name-field-video{
+          float: left;
+          width: 30%;
+          margin-top: -53px;
+        }
+
+        .node-coach-video{
+          margin-bottom: 0;
+        }
+
+        .field-name-field-video-length,
+        .field-name-field-game-type,
+        .field-name-field-limit,
+        .field-name-field-table-size,
+        .field-name-field-coach{
+          float: left;
+          margin: 0 1px 0 9px;
+          border-right: 1px solid rgb(216, 213, 213);
+          padding-right: 5px;
+          height: 19px;
+        }
+        .field-name-field-rating{
+          float: left;
+          margin: 6px 9px;
+          .form-item .description{
+            display: none;
+          }
+        }
+
+        .node-links{
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+
+.node-type-coach-video{
+
+  .node-coach-video{
+    .field-label-inline .field-label{
+      width: 90px;
+      font-family: Roboto Condensed;
+      font-size: 1.2em;
+      font-weight: 400;
+    }
+
+
+    >.group-header{
+      margin-bottom: 20px;
+      border-bottom: 1px solid rgb(226, 226, 226);
+      padding-bottom: 20px;
+      .field-name-title{
+        h2{
+          margin-top: 0;
+          color: #333;
+          font-family: BebasNeueRegular;
+          font-weight: normal;
+          margin: 0 0 .1em;
+          font-size: 40px;
+        }
+      }
+    }
+
+    >.group-left{
+      .field {
+        height: 46px;
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+
+
+
+  .node-coach-profile{
+    &.ds-2col-fluid{
+      display: inline-block;
+      cursor: pointer;
+
+      .field-name-field-photo{
+        border: none;
+        padding: 0;
+        margin: 0;
+        img{
+          height: auto;
+          width: auto;
+        }
+      }
+
+      >.group-left {
+        float: left;
+        width: 32px;
+      }
+
+      >.group-right{
+        float: left;
+        width: auto;
+        margin-left: 10px;
+        h2{
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+}
