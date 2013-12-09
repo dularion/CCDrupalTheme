@@ -1066,6 +1066,18 @@ fieldset[disabled] .btn-link:focus {
       .language-switcher-locale-url li .language-link img {
         width: 100%;
         height: 100%; }
+    .language-switcher-locale-url li .language-link[lang="en"] img {
+      content: url("../img/en.png"); }
+    .language-switcher-locale-url li .language-link[lang="de"] img {
+      content: url("../img/de.png"); }
+    .language-switcher-locale-url li .language-link[lang="fr"] img {
+      content: url("../img/fr.png"); }
+    .language-switcher-locale-url li .language-link[lang="es"] img {
+      content: url("../img/es.png"); }
+    .language-switcher-locale-url li .language-link[lang="it"] img {
+      content: url("../img/it.png"); }
+    .language-switcher-locale-url li .language-link[lang="ru"] img {
+      content: url("../img/ru.png"); }
 
 #footer {
   padding: 1.5em 0 2.5em .5em; }
