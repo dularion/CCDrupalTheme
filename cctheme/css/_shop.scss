@@ -1,5 +1,5 @@
 .page-shop{
-  .main-content{
+  #main-content{
     .grid{
       float: left;
       width: 30%;
@@ -9,7 +9,7 @@
       }
 
       .views-field-field-product-image{
-        max-height: 100px;
+        min-height: 190px;
       }
 
       .views-field-title{
@@ -23,4 +23,10 @@
       }
     }
   }
+}
+
+
+.node-type-product{
+
+
 }
