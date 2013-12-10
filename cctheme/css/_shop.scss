@@ -3,9 +3,23 @@
     .grid{
       float: left;
       width: 30%;
-      margin-right: 1.5%;
+      margin-right: 2px;
       &:nth-child(3n){
         margin-right: 0;
+      }
+
+      .views-field-field-product-image{
+        max-height: 100px;
+      }
+
+      .views-field-title{
+        font-size: 16px;
+        a{
+          color: white;
+          &:hover{
+            text-decoration: none;
+          }
+        }
       }
     }
   }
