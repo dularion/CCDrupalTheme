@@ -2073,6 +2073,32 @@ div.forum-post {
   .page-shop .main-content .grid:nth-child(3n) {
     margin-right: 0; }
 
+.view-shop .grid {
+  margin-right: 1px; }
+  .view-shop .grid:last-child {
+    margin-right: 0; }
+  .view-shop .grid .grid-inner {
+    margin: 0 !important;
+    width: 220px; }
+    .view-shop .grid .grid-inner span {
+      display: block; }
+    .view-shop .grid .grid-inner .views-field-title {
+      font-size: 1.25em;
+      margin: 8px 0 0 0; }
+    .view-shop .grid .grid-inner .views-field-commerce-price {
+      font-size: 1.5em;
+      margin: 8px 8px 32px 8px; }
+    .view-shop .grid .grid-inner .views-field-field-product-image a {
+      display: block;
+      width: 220px;
+      height: 220px; }
+      .view-shop .grid .grid-inner .views-field-field-product-image a img {
+        display: block;
+        margin: auto; }
+    .view-shop .grid .grid-inner .views-field-add-to-cart-form .commerce-add-to-cart {
+      margin: 0;
+      padding: 0; }
+
 html {
   height: 100%; }
 
