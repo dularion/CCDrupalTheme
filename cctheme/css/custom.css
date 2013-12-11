@@ -2069,30 +2069,56 @@ div.forum-post {
 .page-shop #main-content .grid {
   float: left;
   width: 30%;
-  margin: 5px;
-  padding: 20px; }
+  margin: 5px 5px 5px 10px;
+  padding: 20px;
+  box-sizing: border-box; }
+  .page-shop #main-content .grid:first-child {
+    margin: 5px 5px 5px 5px; }
   .page-shop #main-content .grid .grid-inner {
     width: 100%;
     padding: 0; }
     .page-shop #main-content .grid .grid-inner span {
       display: block; }
     .page-shop #main-content .grid .grid-inner .views-field-view-node {
+      position: relative;
       font-size: 14px;
       line-height: 34px;
       text-align: right;
-      float: right;
-      width: 40%;
-      margin: 10px -20px 20px 0;
-      padding: 10px 20px 10px 0;
-      background-color: #247FBC; }
+      height: 34px;
+      margin: 30px -20px -20px -25px;
+      padding: 10px 20px 10px 20px;
+      background-color: #247FBC;
+      -webkit-box-shadow: 1px 1px #2468a5, 2px 2px #2468a5, 3px 3px #2468a5, 4px 4px #2468a5, 4px 4px 5px black;
+      -moz-box-shadow: 1px 1px #2468a5, 2px 2px #2468a5, 3px 3px #2468a5, 4px 4px #2468a5, 4px 4px 5px black;
+      box-shadow: 1px 1px #2468a5, 2px 2px #2468a5, 3px 3px #2468a5, 4px 4px #2468a5, 4px 4px 5px black; }
       .page-shop #main-content .grid .grid-inner .views-field-view-node a {
-        color: #ffffff; }
+        display: block;
+        float: right;
+        margin: -10px -20px -20px -20px;
+        padding: 10px 10px 11px 10px;
+        background-color: #930406;
+        color: #ffffff;
+        -webkit-box-shadow: 1px 1px #49030e, 2px 2px #49030e, 3px 3px #49030e, 4px 4px #49030e;
+        -moz-box-shadow: 1px 1px #49030e, 2px 2px #49030e, 3px 3px #49030e, 4px 4px #49030e;
+        box-shadow: 1px 1px #49030e, 2px 2px #49030e, 3px 3px #49030e, 4px 4px #49030e; }
+    .page-shop #main-content .grid .grid-inner .views-field-view-node:before {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 0;
+      border-right: 20px solid #247FBC;
+      border-top: 20px solid transparent;
+      margin: -30px 0 0 -85%;
+      -webkit-box-shadow: 1px 1px #2468a5, 2px 2px #2468a5, 3px 3px 3px black;
+      -moz-box-shadow: 1px 1px #2468a5, 2px 2px #2468a5, 3px 3px 3px black;
+      box-shadow: 1px 1px #2468a5, 2px 2px #2468a5, 3px 3px 3px black; }
     .page-shop #main-content .grid .grid-inner .views-field-commerce-price {
+      position: absolute;
       font-size: 22px;
       line-height: 34px;
       float: left;
-      width: 60%;
-      margin: 10px 0 20px -20px;
+      height: 34px;
+      margin: -34px 0 -20px -25px;
       padding: 10px 0 10px 20px;
       background-color: #247FBC; }
     .page-shop #main-content .grid .grid-inner .views-field-title {
@@ -2102,13 +2128,15 @@ div.forum-post {
         color: white; }
         .page-shop #main-content .grid .grid-inner .views-field-title a:hover {
           text-decoration: none; }
-    .page-shop #main-content .grid .grid-inner .views-field-field-product-image a {
-      display: block; }
-      .page-shop #main-content .grid .grid-inner .views-field-field-product-image a img {
-        display: block;
-        margin: auto;
-        max-width: 220px !important;
-        width: 100%; }
+    .page-shop #main-content .grid .grid-inner .views-field-field-product-image {
+      min-height: 200px; }
+      .page-shop #main-content .grid .grid-inner .views-field-field-product-image a {
+        display: block; }
+        .page-shop #main-content .grid .grid-inner .views-field-field-product-image a img {
+          display: block;
+          margin: auto;
+          max-width: 220px !important;
+          width: 100%; }
     .page-shop #main-content .grid .grid-inner .views-field-add-to-cart-form .commerce-add-to-cart {
       margin: 0;
       padding: 0; }
