@@ -2066,12 +2066,20 @@ div.forum-post {
   margin-bottom: 14px;
   padding-top: 10px; }
 
-.page-shop .main-content .grid {
+.page-shop #main-content .grid {
   float: left;
   width: 30%;
-  margin-right: 1.5%; }
-  .page-shop .main-content .grid:nth-child(3n) {
+  margin-right: 2px; }
+  .page-shop #main-content .grid:nth-child(3n) {
     margin-right: 0; }
+  .page-shop #main-content .grid .views-field-field-product-image {
+    min-height: 190px; }
+  .page-shop #main-content .grid .views-field-title {
+    font-size: 16px; }
+    .page-shop #main-content .grid .views-field-title a {
+      color: white; }
+      .page-shop #main-content .grid .views-field-title a:hover {
+        text-decoration: none; }
 
 .view-shop .grid {
   margin-right: 1px; }
