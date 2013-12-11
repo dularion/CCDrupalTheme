@@ -2069,41 +2069,47 @@ div.forum-post {
 .page-shop #main-content .grid {
   float: left;
   width: 30%;
-  margin-right: 2px; }
-  .page-shop #main-content .grid:nth-child(3n) {
-    margin-right: 0; }
-  .page-shop #main-content .grid .views-field-field-product-image {
-    min-height: 190px; }
-  .page-shop #main-content .grid .views-field-title {
-    font-size: 16px; }
-    .page-shop #main-content .grid .views-field-title a {
-      color: white; }
-      .page-shop #main-content .grid .views-field-title a:hover {
-        text-decoration: none; }
-
-.view-shop .grid {
-  margin-right: 1px; }
-  .view-shop .grid:last-child {
-    margin-right: 0; }
-  .view-shop .grid .grid-inner {
-    margin: 0 !important;
-    width: 220px; }
-    .view-shop .grid .grid-inner span {
+  margin: 5px;
+  padding: 20px; }
+  .page-shop #main-content .grid .grid-inner {
+    width: 100%;
+    padding: 0; }
+    .page-shop #main-content .grid .grid-inner span {
       display: block; }
-    .view-shop .grid .grid-inner .views-field-title {
-      font-size: 1.25em;
-      margin: 8px 0 0 0; }
-    .view-shop .grid .grid-inner .views-field-commerce-price {
-      font-size: 1.5em;
-      margin: 8px 8px 32px 8px; }
-    .view-shop .grid .grid-inner .views-field-field-product-image a {
-      display: block;
-      width: 220px;
-      height: 220px; }
-      .view-shop .grid .grid-inner .views-field-field-product-image a img {
+    .page-shop #main-content .grid .grid-inner .views-field-view-node {
+      font-size: 14px;
+      line-height: 34px;
+      text-align: right;
+      float: right;
+      width: 40%;
+      margin: 10px -20px 20px 0;
+      padding: 10px 20px 10px 0;
+      background-color: #247FBC; }
+      .page-shop #main-content .grid .grid-inner .views-field-view-node a {
+        color: #ffffff; }
+    .page-shop #main-content .grid .grid-inner .views-field-commerce-price {
+      font-size: 22px;
+      line-height: 34px;
+      float: left;
+      width: 60%;
+      margin: 10px 0 20px -20px;
+      padding: 10px 0 10px 20px;
+      background-color: #247FBC; }
+    .page-shop #main-content .grid .grid-inner .views-field-title {
+      font-size: 16px;
+      margin: 10px 0 0 0; }
+      .page-shop #main-content .grid .grid-inner .views-field-title a {
+        color: white; }
+        .page-shop #main-content .grid .grid-inner .views-field-title a:hover {
+          text-decoration: none; }
+    .page-shop #main-content .grid .grid-inner .views-field-field-product-image a {
+      display: block; }
+      .page-shop #main-content .grid .grid-inner .views-field-field-product-image a img {
         display: block;
-        margin: auto; }
-    .view-shop .grid .grid-inner .views-field-add-to-cart-form .commerce-add-to-cart {
+        margin: auto;
+        max-width: 220px !important;
+        width: 100%; }
+    .page-shop #main-content .grid .grid-inner .views-field-add-to-cart-form .commerce-add-to-cart {
       margin: 0;
       padding: 0; }
 

@@ -3,72 +3,78 @@
     .grid{
       float: left;
       width: 30%;
-      margin-right: 2px;
-      &:nth-child(3n){
-        margin-right: 0;
-      }
+      margin: 5px;
+      padding: 20px;
 
-      .views-field-field-product-image{
-        min-height: 190px;
-      }
+      .grid-inner {
+        width: 100%;
+        padding: 0;
 
-      .views-field-title{
-        font-size: 16px;
-        a{
-          color: white;
-          &:hover{
-            text-decoration: none;
-          }
-        }
-      }
-    }
-  }
-}
-
-.view-shop {
-  .grid {
-    margin-right: 1px;
-
-    &:last-child {
-      margin-right: 0;
-    }
-
-    .grid-inner {
-      margin: 0 !important;
-      width: 220px;
-
-      span {
-        display: block;
-      }
-
-      .views-field-title {
-        font-size: 1.25em;
-        margin: 8px 0 0 0;
-      }
-
-      .views-field-commerce-price {
-        font-size: 1.5em;
-        margin: 8px 8px 32px 8px;
-      }
-
-      .views-field-field-product-image {
-        a {
+        span {
           display: block;
-          width: 220px;
-          height: 220px;
+        }
 
-          img{
-            display: block;
-            margin: auto;
+        .views-field-view-node {
+          font-size: 14px;
+          line-height: 34px;
+          text-align: right;
+
+          float: right;
+          width: 40%;
+
+          margin: 10px -20px 20px 0;
+          padding: 10px 20px 10px 0;
+
+          background-color: #247FBC;
+
+          a {
+            color: #ffffff;
           }
         }
-      }
 
-      .views-field-add-to-cart-form{
-        .commerce-add-to-cart {
-          margin: 0;
-          padding: 0;
+        .views-field-commerce-price {
+          font-size: 22px;
+          line-height: 34px;
 
+          float: left;
+          width: 60%;
+
+          margin: 10px 0 20px -20px;
+          padding: 10px 0 10px 20px;
+
+          background-color: #247FBC;
+        }
+
+        .views-field-title{
+          font-size: 16px;
+          margin: 10px 0 0 0;
+
+          a{
+            color: white;
+            &:hover{
+              text-decoration: none;
+            }
+          }
+        }
+
+        .views-field-field-product-image {
+          a {
+            display: block;
+
+            img{
+              display: block;
+              margin: auto;
+              max-width: 220px !important;
+              width: 100%;
+            }
+          }
+        }
+
+        .views-field-add-to-cart-form{
+          .commerce-add-to-cart {
+            margin: 0;
+            padding: 0;
+          }
         }
       }
     }
