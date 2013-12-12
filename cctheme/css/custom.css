@@ -2066,81 +2066,142 @@ div.forum-post {
   margin-bottom: 14px;
   padding-top: 10px; }
 
-.page-shop #main-content .grid {
+.page-shop #main-content .views-view-grid .grid {
   float: left;
   width: 30%;
   margin: 5px 5px 5px 10px;
   padding: 20px;
   box-sizing: border-box; }
-  .page-shop #main-content .grid:first-child {
+  .page-shop #main-content .views-view-grid .grid:first-child {
     margin: 5px 5px 5px 5px; }
-  .page-shop #main-content .grid .grid-inner {
+  .page-shop #main-content .views-view-grid .grid .grid-inner {
     width: 100%;
     padding: 0; }
-    .page-shop #main-content .grid .grid-inner span {
+    .page-shop #main-content .views-view-grid .grid .grid-inner span {
       display: block; }
-    .page-shop #main-content .grid .grid-inner .views-field-view-node {
-      position: relative;
-      font-size: 14px;
-      line-height: 34px;
-      text-align: right;
-      height: 34px;
-      margin: 30px -20px -20px -25px;
-      padding: 10px 20px 10px 20px;
-      background-color: #247FBC;
-      -webkit-box-shadow: 1px 1px #2468a5, 2px 2px #2468a5, 3px 3px #2468a5, 4px 4px #2468a5, 4px 4px 5px black;
-      -moz-box-shadow: 1px 1px #2468a5, 2px 2px #2468a5, 3px 3px #2468a5, 4px 4px #2468a5, 4px 4px 5px black;
-      box-shadow: 1px 1px #2468a5, 2px 2px #2468a5, 3px 3px #2468a5, 4px 4px #2468a5, 4px 4px 5px black; }
-      .page-shop #main-content .grid .grid-inner .views-field-view-node a {
+      .page-shop #main-content .views-view-grid .grid .grid-inner span a {
         display: block;
+        height: 50px;
+        line-height: 25px;
+        vertical-align: bottom; }
+    .page-shop #main-content .views-view-grid .grid .grid-inner .views-field-view-node {
+      position: relative;
+      height: 40px;
+      margin: 20px -21px -20px -25px;
+      padding: 0 20px 0 20px;
+      -webkit-box-shadow: 1px 1px #224982, 2px 2px #224982, 3px 3px #224982, 4px 4px #224982, 4px 4px 5px black;
+      -moz-box-shadow: 1px 1px #224982, 2px 2px #224982, 3px 3px #224982, 4px 4px #224982, 4px 4px 5px black;
+      box-shadow: 1px 1px #224982, 2px 2px #224982, 3px 3px #224982, 4px 4px #224982, 4px 4px 5px black; }
+      .page-shop #main-content .views-view-grid .grid .grid-inner .views-field-view-node .field-content {
         float: right;
-        margin: -10px -20px -20px -20px;
-        padding: 10px 10px 11px 10px;
-        background-color: #930406;
-        color: #ffffff;
-        -webkit-box-shadow: 1px 1px #49030e, 2px 2px #49030e, 3px 3px #49030e, 4px 4px #49030e;
-        -moz-box-shadow: 1px 1px #49030e, 2px 2px #49030e, 3px 3px #49030e, 4px 4px #49030e;
-        box-shadow: 1px 1px #49030e, 2px 2px #49030e, 3px 3px #49030e, 4px 4px #49030e; }
-    .page-shop #main-content .grid .grid-inner .views-field-view-node:before {
-      position: absolute;
-      content: "";
-      width: 0;
-      height: 0;
-      border-right: 20px solid #247FBC;
-      border-top: 20px solid transparent;
-      margin: -30px 0 0 -85%;
-      -webkit-box-shadow: 1px 1px #2468a5, 2px 2px #2468a5, 3px 3px 3px black;
-      -moz-box-shadow: 1px 1px #2468a5, 2px 2px #2468a5, 3px 3px 3px black;
-      box-shadow: 1px 1px #2468a5, 2px 2px #2468a5, 3px 3px 3px black; }
-    .page-shop #main-content .grid .grid-inner .views-field-commerce-price {
-      position: absolute;
-      font-size: 22px;
-      line-height: 34px;
+        width: 40%;
+        height: 40px;
+        background-color: silver;
+        margin: 0 -20px 0 0;
+        padding: 0 0 0 1px;
+        -webkit-box-shadow: 1px 1px gray, 2px 2px gray, 3px 3px gray, 4px 4px gray;
+        -moz-box-shadow: 1px 1px gray, 2px 2px gray, 3px 3px gray, 4px 4px gray;
+        box-shadow: 1px 1px gray, 2px 2px gray, 3px 3px gray, 4px 4px gray; }
+        .page-shop #main-content .views-view-grid .grid .grid-inner .views-field-view-node .field-content a {
+          display: block;
+          height: 40px;
+          margin: 0 0 -20px 0;
+          padding: 0;
+          border: none;
+          box-shadow: none;
+          font-family: Roboto Slab;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 40px;
+          color: white;
+          text-shadow: none;
+          text-align: center;
+          vertical-align: middle;
+          background-color: #aa0406;
+          background-repeat: repeat-x;
+          background: -moz-linear-gradient(135deg, #d62a38, #aa0406);
+          background: -webkit-linear-gradient(135deg, #d62a38, #aa0406);
+          background: -o-linear-gradient(135deg, #d62a38, #aa0406);
+          background: linear-gradient(135deg, #d62a38, #aa0406);
+          -webkit-box-shadow: 1px 1px #49030e, 2px 2px #49030e, 3px 3px #49030e, 4px 4px #49030e;
+          -moz-box-shadow: 1px 1px #49030e, 2px 2px #49030e, 3px 3px #49030e, 4px 4px #49030e;
+          box-shadow: 1px 1px #49030e, 2px 2px #49030e, 3px 3px #49030e, 4px 4px #49030e; }
+          .page-shop #main-content .views-view-grid .grid .grid-inner .views-field-view-node .field-content a:hover {
+            text-decoration: none;
+            color: white;
+            background-color: #930406;
+            background-repeat: repeat-x;
+            background: -moz-linear-gradient(135deg, #c32936, #930406);
+            background: -webkit-linear-gradient(135deg, #c32936, #930406);
+            background: -o-linear-gradient(135deg, #c32936, #930406);
+            background: linear-gradient(135deg, #c32936, #930406); }
+          .page-shop #main-content .views-view-grid .grid .grid-inner .views-field-view-node .field-content a:active {
+            text-decoration: none;
+            color: white;
+            background-color: #840406;
+            background-repeat: repeat-x;
+            background: -moz-linear-gradient(135deg, #ad252e, #840406);
+            background: -webkit-linear-gradient(135deg, #ad252e, #840406);
+            background: -o-linear-gradient(135deg, #ad252e, #840406);
+            background: linear-gradient(135deg, #ad252e, #840406); }
+          .page-shop #main-content .views-view-grid .grid .grid-inner .views-field-view-node .field-content a > .highlight {
+            font-weight: 700;
+            font-size: 1.2em; }
+      .page-shop #main-content .views-view-grid .grid .grid-inner .views-field-view-node:before {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 0;
+        border-right: 20px solid #247FBC;
+        border-top: 20px solid transparent;
+        margin: -15px 0 0 -10px;
+        -webkit-box-shadow: 1px 1px #224982, 2px 2px #224982, 3px 3px 3px black;
+        -moz-box-shadow: 1px 1px #224982, 2px 2px #224982, 3px 3px 3px black;
+        box-shadow: 1px 1px #224982, 2px 2px #224982, 3px 3px 3px black; }
+    .page-shop #main-content .views-view-grid .grid .grid-inner .views-field-commerce-price {
+      position: relative;
+      font-size: 18px;
+      line-height: 40px;
       float: left;
-      height: 34px;
-      margin: -34px 0 -20px -25px;
-      padding: 10px 0 10px 20px;
-      background-color: #247FBC; }
-    .page-shop #main-content .grid .grid-inner .views-field-title {
+      height: 40px;
+      width: 60%;
+      margin: -20px 0 -20px -25px;
+      padding: 0 32px 0 10px;
+      background-color: #247FBC;
+      background-color: #1f669b;
+      background-repeat: repeat-x;
+      background: -moz-linear-gradient(135deg, #2585c3, #1f669b);
+      background: -webkit-linear-gradient(135deg, #2585c3, #1f669b);
+      background: -o-linear-gradient(135deg, #2585c3, #1f669b);
+      background: linear-gradient(135deg, #2585c3, #1f669b); }
+    .page-shop #main-content .views-view-grid .grid .grid-inner .views-field-title {
       font-size: 16px;
       margin: 10px 0 0 0; }
-      .page-shop #main-content .grid .grid-inner .views-field-title a {
+      .page-shop #main-content .views-view-grid .grid .grid-inner .views-field-title a {
         color: white; }
-        .page-shop #main-content .grid .grid-inner .views-field-title a:hover {
+        .page-shop #main-content .views-view-grid .grid .grid-inner .views-field-title a:hover {
           text-decoration: none; }
-    .page-shop #main-content .grid .grid-inner .views-field-field-product-image {
-      min-height: 200px; }
-      .page-shop #main-content .grid .grid-inner .views-field-field-product-image a {
+    .page-shop #main-content .views-view-grid .grid .grid-inner .views-field-field-product-image {
+      min-height: 220px; }
+      .page-shop #main-content .views-view-grid .grid .grid-inner .views-field-field-product-image a {
         display: block; }
-        .page-shop #main-content .grid .grid-inner .views-field-field-product-image a img {
+        .page-shop #main-content .views-view-grid .grid .grid-inner .views-field-field-product-image a img {
           display: block;
           margin: auto;
           max-width: 220px !important;
-          width: 100%; }
-    .page-shop #main-content .grid .grid-inner .views-field-add-to-cart-form .commerce-add-to-cart {
+          width: 100%;
+          height: auto; }
+    .page-shop #main-content .views-view-grid .grid .grid-inner .views-field-add-to-cart-form .commerce-add-to-cart {
       margin: 0;
       padding: 0; }
 
+@media (max-width: 719px) {
+  #main-content .views-view-grid {
+    padding: 0 10px 0 10px !important; }
+    #main-content .views-view-grid .grid {
+      margin: 0 0 2em 0 !important; }
+      #main-content .views-view-grid .grid:first-child {
+        margin: 0 0 2em 0 !important; } }
 html {
   height: 100%; }
 
