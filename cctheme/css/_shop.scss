@@ -118,40 +118,62 @@ $views-field-boxshadow-border: 1px 1px gray, 2px 2px gray, 3px 3px gray, 4px 4px
   #sidebar-first-wrapper {
     .block-commerce-cart {
       border: none;
-      background: rgba(255, 255, 255, 0.15);
+      background: rgba(255, 255, 255, 0.15) !important;
       color: white;
       padding: 18px;
       font-size: 14px;
-      margin-bottom: 15px;
+      margin: 5px 0 0 0;
 
-      .view-content {
-        .views-table {
-          .views-row-first {
-            padding: 0;
-          }
+      .cart-contents {
+        font-size: 12px;
 
-          .views-row {
-            padding: 0;
-          }
+        .view-content {
+          margin: 0 -5px 0 -5px;
 
-          .views-row-last {
-            padding: 0;
-          }
+          .views-table {
+            width: 100%;
 
-          .views-field {
-            border: 0;
-            padding: 5px;
+            .views-row-first {
+              padding: 0;
+            }
+
+            .views-row {
+              padding: 0;
+            }
+
+            .views-row-last {
+              padding: 0;
+            }
+
+            .views-field {
+              border: 0;
+              padding: 5px;
+            }
+
+            .views-field-quantity {
+              width: 1px;
+              padding-right: 0;
+            }
+
+            .views-field-line-item-title {
+
+            }
+
+            .views-field-commerce-total {
+              width: 1px;
+            }
           }
         }
-      }
 
-      .view-footer {
-        .line-item-summary {
-          margin: 0;
+        .view-footer {
+          .line-item-summary {
+            margin: 0;
+          }
         }
       }
     }
   }
+
   #main-content{
     .views-view-grid {
       .grid{
@@ -318,6 +340,18 @@ $views-field-boxshadow-border: 1px 1px gray, 2px 2px gray, 3px 3px gray, 4px 4px
 }
 
 @media (max-width: 719px){
+  .page-shop{
+    #sidebar-first-wrapper {
+      .block-commerce-cart {
+        margin: 10px !important;
+
+        .block-title {
+          padding-top: .5em;
+        }
+      }
+    }
+  }
+
   #main-content{
     .views-view-grid {
       padding: 0 10px 0 10px !important;
@@ -334,6 +368,7 @@ $views-field-boxshadow-border: 1px 1px gray, 2px 2px gray, 3px 3px gray, 4px 4px
 }
 
 @media (max-width: 599px){
+
   .page-node {
     .node-product {
       .group-right {
