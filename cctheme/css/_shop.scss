@@ -1,4 +1,157 @@
+$views-field-boxshadow-half: 1px 1px #224982, 2px 2px #224982, 3px 3px #224982, 4px 4px #224982, 4px 4px 4px black;
+$views-field-boxshadow: 1px 1px #224982, 2px 2px #224982, 3px 3px #224982, 4px 4px #224982, 4px 4px 5px black;
+$views-field-boxshadow-red: 1px 1px #49030e, 2px 2px #49030e, 3px 3px #49030e, 4px 4px #49030e;
+$views-field-boxshadow-border: 1px 1px gray, 2px 2px gray, 3px 3px gray, 4px 4px gray;
+
+.page-node {
+  .node-product {
+    border: none;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    padding: 18px;
+    font-size: 14px;
+    margin: 0 0 20px 0;
+
+    .group-left {
+      .field-name-field-product-image {
+        margin: 0 20px 0 0;
+
+        img{
+          display: block;
+          margin: auto;
+          max-width: 100% !important;
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+    .group-right {
+      .field-name-title {
+        h2 {
+          margin: 0 0 10px 0;
+        }
+      }
+      .field-name-commerce-price {
+        font-size: 18px;
+      }
+      .commerce-add-to-cart {
+        margin: 15px 0 0 0;
+        padding: 0;
+
+        .form-item-quantity {
+          height: 40px;
+          margin: 0;
+          background-color: #247FBC;
+          @include gradient-directional(#2585c3, #1f669b, 135deg);
+          @include box-shadow($views-field-boxshadow);
+
+          label {
+            float: left;
+            line-height: 40px;
+            padding: 0 10px 0 15px;
+          }
+
+          .form-text {
+            border: 0;
+            padding: 0;
+            background: rgba(255, 255, 255, 0.15);
+            color: white;
+            height: 40px;
+            width: 40px !important;
+            font-size: 18px;
+            text-align: center;
+          }
+        }
+        .edit-submit {
+          float: right;
+          background-color: silver;
+          margin: -40px 0 0 0;
+          padding: 0 0 0 1px;
+          @include box-shadow($views-field-boxshadow-border);
+
+          .form-submit {
+            display: block;
+            height: 40px;
+            margin: 0;
+            padding: 0 10px 0 10px;
+            @include border-radius(0);
+
+            border: none;
+
+            font-family: Roboto Slab;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 40px;
+
+            color: white;
+            text-shadow: none;
+
+            text-align: center;
+            vertical-align: middle;
+
+            @include gradient-directional(#d62a38, #aa0406, 135deg);
+            @include box-shadow($views-field-boxshadow-red);
+
+            &:hover{
+              text-decoration: none;
+              color: white;
+              @include gradient-directional(#c32936, #930406, 135deg);
+            }
+            &:active{
+              text-decoration: none;
+              color: white;
+              @include gradient-directional(#ad252e, #840406, 135deg);
+            }
+            >.highlight{
+              font-weight: 700;
+              font-size: 1.2em;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 .page-shop{
+  #sidebar-first-wrapper {
+    .block-commerce-cart {
+      border: none;
+      background: rgba(255, 255, 255, 0.15);
+      color: white;
+      padding: 18px;
+      font-size: 14px;
+      margin-bottom: 15px;
+
+      .view-content {
+        .views-table {
+          .views-row-first {
+            padding: 0;
+          }
+
+          .views-row {
+            padding: 0;
+          }
+
+          .views-row-last {
+            padding: 0;
+          }
+
+          .views-field {
+            border: 0;
+            padding: 5px;
+          }
+        }
+      }
+
+      .view-footer {
+        .line-item-summary {
+          margin: 0;
+        }
+      }
+    }
+  }
   #main-content{
     .views-view-grid {
       .grid{
@@ -7,18 +160,13 @@
         margin: 5px 5px 5px 10px;
         padding: 20px;
 
-        box-sizing: border-box;
+        @include box-sizing(border-box);
 
         &:first-child {
           margin: 5px 5px 5px 5px;
         }
 
         .grid-inner {
-          $views-field-boxshadow-half: 1px 1px #224982, 2px 2px #224982, 3px 3px 3px black;
-          $views-field-boxshadow: 1px 1px #224982, 2px 2px #224982, 3px 3px #224982, 4px 4px #224982, 4px 4px 5px black;
-          $views-field-boxshadow-red: 1px 1px #49030e, 2px 2px #49030e, 3px 3px #49030e, 4px 4px #49030e;
-          $views-field-boxshadow-border: 1px 1px gray, 2px 2px gray, 3px 3px gray, 4px 4px gray;
-
           width: 100%;
           padding: 0;
 
@@ -38,16 +186,17 @@
 
             height: 40px;
 
-            margin: 20px -21px -20px -25px;
-            padding: 0 20px 0 20px;
+            margin: 20px -6px -6px -14px;
+            padding: 0;
 
             .field-content {
               float: right;
               width: 40%;
               height: 40px;
               background-color: silver;
-              margin: 0 -20px 0 0;
+              margin: 0;
               padding: 0 0 0 1px;
+
               @include box-shadow($views-field-boxshadow-border);
 
               a {
@@ -100,7 +249,7 @@
               height: 0;
               border-right: 20px solid #247FBC;
               border-top: 20px solid transparent;
-              margin: -15px 0 0 -10px;
+              margin: -15px 0 0 10px;
 
               @include box-shadow($views-field-boxshadow-half);
             }
@@ -116,8 +265,8 @@
             height: 40px;
             width: 60%;
 
-            margin: -20px 0 -20px -25px;
-            padding: 0 32px 0 10px;
+            margin: -34px 0 -14px -14px;
+            padding: 0 1px 0 10px;
 
             background-color: #247FBC;
             @include gradient-directional(#2585c3, #1f669b, 135deg);
@@ -138,17 +287,22 @@
           .views-field-field-product-image {
             min-height: 220px;
 
-            a {
-              display: block;
+            .field-content {
+              margin: -10px;
 
-              img{
+              a {
                 display: block;
-                margin: auto;
-                max-width: 220px !important;
-                width: 100%;
-                height: auto;
+
+                img{
+                  display: block;
+                  margin: auto;
+                  max-width: 220px !important;
+                  width: 100%;
+                  height: auto;
+                }
               }
             }
+
           }
 
           .views-field-add-to-cart-form{
@@ -173,6 +327,30 @@
 
         &:first-child {
           margin: 0 0 2em 0 !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 599px){
+  .page-node {
+    .node-product {
+      .group-right {
+        .commerce-add-to-cart {
+          .form-item-quantity {
+            height: 80px;
+          }
+
+          .edit-submit {
+            float: left;
+            width: 100%;
+            padding: 1px 0 0 0;
+
+            .form-submit {
+              width: 100%;
+            }
+          }
         }
       }
     }

@@ -2066,11 +2066,135 @@ div.forum-post {
   margin-bottom: 14px;
   padding-top: 10px; }
 
+.page-node .node-product {
+  border: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  padding: 18px;
+  font-size: 14px;
+  margin: 0 0 20px 0; }
+  .page-node .node-product .group-left .field-name-field-product-image {
+    margin: 0 20px 0 0; }
+    .page-node .node-product .group-left .field-name-field-product-image img {
+      display: block;
+      margin: auto;
+      max-width: 100% !important;
+      width: 100%;
+      height: auto; }
+  .page-node .node-product .group-right .field-name-title h2 {
+    margin: 0 0 10px 0; }
+  .page-node .node-product .group-right .field-name-commerce-price {
+    font-size: 18px; }
+  .page-node .node-product .group-right .commerce-add-to-cart {
+    margin: 15px 0 0 0;
+    padding: 0; }
+    .page-node .node-product .group-right .commerce-add-to-cart .form-item-quantity {
+      height: 40px;
+      margin: 0;
+      background-color: #247FBC;
+      background-color: #1f669b;
+      background-repeat: repeat-x;
+      background: -moz-linear-gradient(135deg, #2585c3, #1f669b);
+      background: -webkit-linear-gradient(135deg, #2585c3, #1f669b);
+      background: -o-linear-gradient(135deg, #2585c3, #1f669b);
+      background: linear-gradient(135deg, #2585c3, #1f669b);
+      -webkit-box-shadow: 1px 1px #224982, 2px 2px #224982, 3px 3px #224982, 4px 4px #224982, 4px 4px 5px black;
+      -moz-box-shadow: 1px 1px #224982, 2px 2px #224982, 3px 3px #224982, 4px 4px #224982, 4px 4px 5px black;
+      box-shadow: 1px 1px #224982, 2px 2px #224982, 3px 3px #224982, 4px 4px #224982, 4px 4px 5px black; }
+      .page-node .node-product .group-right .commerce-add-to-cart .form-item-quantity label {
+        float: left;
+        line-height: 40px;
+        padding: 0 10px 0 15px; }
+      .page-node .node-product .group-right .commerce-add-to-cart .form-item-quantity .form-text {
+        border: 0;
+        padding: 0;
+        background: rgba(255, 255, 255, 0.15);
+        color: white;
+        height: 40px;
+        width: 40px !important;
+        font-size: 18px;
+        text-align: center; }
+    .page-node .node-product .group-right .commerce-add-to-cart .edit-submit {
+      float: right;
+      background-color: silver;
+      margin: -40px 0 0 0;
+      padding: 0 0 0 1px;
+      -webkit-box-shadow: 1px 1px gray, 2px 2px gray, 3px 3px gray, 4px 4px gray;
+      -moz-box-shadow: 1px 1px gray, 2px 2px gray, 3px 3px gray, 4px 4px gray;
+      box-shadow: 1px 1px gray, 2px 2px gray, 3px 3px gray, 4px 4px gray; }
+      .page-node .node-product .group-right .commerce-add-to-cart .edit-submit .form-submit {
+        display: block;
+        height: 40px;
+        margin: 0;
+        padding: 0 10px 0 10px;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+        border: none;
+        font-family: Roboto Slab;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 40px;
+        color: white;
+        text-shadow: none;
+        text-align: center;
+        vertical-align: middle;
+        background-color: #aa0406;
+        background-repeat: repeat-x;
+        background: -moz-linear-gradient(135deg, #d62a38, #aa0406);
+        background: -webkit-linear-gradient(135deg, #d62a38, #aa0406);
+        background: -o-linear-gradient(135deg, #d62a38, #aa0406);
+        background: linear-gradient(135deg, #d62a38, #aa0406);
+        -webkit-box-shadow: 1px 1px #49030e, 2px 2px #49030e, 3px 3px #49030e, 4px 4px #49030e;
+        -moz-box-shadow: 1px 1px #49030e, 2px 2px #49030e, 3px 3px #49030e, 4px 4px #49030e;
+        box-shadow: 1px 1px #49030e, 2px 2px #49030e, 3px 3px #49030e, 4px 4px #49030e; }
+        .page-node .node-product .group-right .commerce-add-to-cart .edit-submit .form-submit:hover {
+          text-decoration: none;
+          color: white;
+          background-color: #930406;
+          background-repeat: repeat-x;
+          background: -moz-linear-gradient(135deg, #c32936, #930406);
+          background: -webkit-linear-gradient(135deg, #c32936, #930406);
+          background: -o-linear-gradient(135deg, #c32936, #930406);
+          background: linear-gradient(135deg, #c32936, #930406); }
+        .page-node .node-product .group-right .commerce-add-to-cart .edit-submit .form-submit:active {
+          text-decoration: none;
+          color: white;
+          background-color: #840406;
+          background-repeat: repeat-x;
+          background: -moz-linear-gradient(135deg, #ad252e, #840406);
+          background: -webkit-linear-gradient(135deg, #ad252e, #840406);
+          background: -o-linear-gradient(135deg, #ad252e, #840406);
+          background: linear-gradient(135deg, #ad252e, #840406); }
+        .page-node .node-product .group-right .commerce-add-to-cart .edit-submit .form-submit > .highlight {
+          font-weight: 700;
+          font-size: 1.2em; }
+
+.page-shop #sidebar-first-wrapper .block-commerce-cart {
+  border: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  padding: 18px;
+  font-size: 14px;
+  margin-bottom: 15px; }
+  .page-shop #sidebar-first-wrapper .block-commerce-cart .view-content .views-table .views-row-first {
+    padding: 0; }
+  .page-shop #sidebar-first-wrapper .block-commerce-cart .view-content .views-table .views-row {
+    padding: 0; }
+  .page-shop #sidebar-first-wrapper .block-commerce-cart .view-content .views-table .views-row-last {
+    padding: 0; }
+  .page-shop #sidebar-first-wrapper .block-commerce-cart .view-content .views-table .views-field {
+    border: 0;
+    padding: 5px; }
+  .page-shop #sidebar-first-wrapper .block-commerce-cart .view-footer .line-item-summary {
+    margin: 0; }
 .page-shop #main-content .views-view-grid .grid {
   float: left;
   width: 30%;
   margin: 5px 5px 5px 10px;
   padding: 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box; }
   .page-shop #main-content .views-view-grid .grid:first-child {
     margin: 5px 5px 5px 5px; }
@@ -2087,8 +2211,8 @@ div.forum-post {
     .page-shop #main-content .views-view-grid .grid .grid-inner .views-field-view-node {
       position: relative;
       height: 40px;
-      margin: 20px -21px -20px -25px;
-      padding: 0 20px 0 20px;
+      margin: 20px -6px -6px -14px;
+      padding: 0;
       -webkit-box-shadow: 1px 1px #224982, 2px 2px #224982, 3px 3px #224982, 4px 4px #224982, 4px 4px 5px black;
       -moz-box-shadow: 1px 1px #224982, 2px 2px #224982, 3px 3px #224982, 4px 4px #224982, 4px 4px 5px black;
       box-shadow: 1px 1px #224982, 2px 2px #224982, 3px 3px #224982, 4px 4px #224982, 4px 4px 5px black; }
@@ -2097,7 +2221,7 @@ div.forum-post {
         width: 40%;
         height: 40px;
         background-color: silver;
-        margin: 0 -20px 0 0;
+        margin: 0;
         padding: 0 0 0 1px;
         -webkit-box-shadow: 1px 1px gray, 2px 2px gray, 3px 3px gray, 4px 4px gray;
         -moz-box-shadow: 1px 1px gray, 2px 2px gray, 3px 3px gray, 4px 4px gray;
@@ -2154,10 +2278,10 @@ div.forum-post {
         height: 0;
         border-right: 20px solid #247FBC;
         border-top: 20px solid transparent;
-        margin: -15px 0 0 -10px;
-        -webkit-box-shadow: 1px 1px #224982, 2px 2px #224982, 3px 3px 3px black;
-        -moz-box-shadow: 1px 1px #224982, 2px 2px #224982, 3px 3px 3px black;
-        box-shadow: 1px 1px #224982, 2px 2px #224982, 3px 3px 3px black; }
+        margin: -15px 0 0 10px;
+        -webkit-box-shadow: 1px 1px #224982, 2px 2px #224982, 3px 3px #224982, 4px 4px #224982, 4px 4px 4px black;
+        -moz-box-shadow: 1px 1px #224982, 2px 2px #224982, 3px 3px #224982, 4px 4px #224982, 4px 4px 4px black;
+        box-shadow: 1px 1px #224982, 2px 2px #224982, 3px 3px #224982, 4px 4px #224982, 4px 4px 4px black; }
     .page-shop #main-content .views-view-grid .grid .grid-inner .views-field-commerce-price {
       position: relative;
       font-size: 18px;
@@ -2165,8 +2289,8 @@ div.forum-post {
       float: left;
       height: 40px;
       width: 60%;
-      margin: -20px 0 -20px -25px;
-      padding: 0 32px 0 10px;
+      margin: -34px 0 -14px -14px;
+      padding: 0 1px 0 10px;
       background-color: #247FBC;
       background-color: #1f669b;
       background-repeat: repeat-x;
@@ -2183,14 +2307,16 @@ div.forum-post {
           text-decoration: none; }
     .page-shop #main-content .views-view-grid .grid .grid-inner .views-field-field-product-image {
       min-height: 220px; }
-      .page-shop #main-content .views-view-grid .grid .grid-inner .views-field-field-product-image a {
-        display: block; }
-        .page-shop #main-content .views-view-grid .grid .grid-inner .views-field-field-product-image a img {
-          display: block;
-          margin: auto;
-          max-width: 220px !important;
-          width: 100%;
-          height: auto; }
+      .page-shop #main-content .views-view-grid .grid .grid-inner .views-field-field-product-image .field-content {
+        margin: -10px; }
+        .page-shop #main-content .views-view-grid .grid .grid-inner .views-field-field-product-image .field-content a {
+          display: block; }
+          .page-shop #main-content .views-view-grid .grid .grid-inner .views-field-field-product-image .field-content a img {
+            display: block;
+            margin: auto;
+            max-width: 220px !important;
+            width: 100%;
+            height: auto; }
     .page-shop #main-content .views-view-grid .grid .grid-inner .views-field-add-to-cart-form .commerce-add-to-cart {
       margin: 0;
       padding: 0; }
@@ -2202,6 +2328,15 @@ div.forum-post {
       margin: 0 0 2em 0 !important; }
       #main-content .views-view-grid .grid:first-child {
         margin: 0 0 2em 0 !important; } }
+@media (max-width: 599px) {
+  .page-node .node-product .group-right .commerce-add-to-cart .form-item-quantity {
+    height: 80px; }
+  .page-node .node-product .group-right .commerce-add-to-cart .edit-submit {
+    float: left;
+    width: 100%;
+    padding: 1px 0 0 0; }
+    .page-node .node-product .group-right .commerce-add-to-cart .edit-submit .form-submit {
+      width: 100%; } }
 html {
   height: 100%; }
 
