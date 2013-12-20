@@ -1,220 +1,316 @@
-<?php
-
-/**
- * @file
- * Default template for HTML Mail
- *
- * ========================================================= Begin instructions.
- *
- * When formatting an email message with a given $module and $key, [1]HTML
- * Mail will use the first template file it finds from the following list:
- *  1. htmlmail-$module-$key.tpl.php
- *  2. htmlmail-$module.tpl.php
- *  3. htmlmail.tpl.php
- *
- * For each filename, [2]HTML Mail looks first in the chosen Email theme
- * directory, then in its own module directory, before proceeding to the
- * next filename.
- *
- * For example, if example_module sends mail with:
- * drupal_mail("example_module", "outgoing_message" ...)
- *
- *
- * the possible template file names would be:
- *  1. htmlmail-example-module-outgoing-message.tpl.php
- *  2. htmlmail-example-module.tpl.php
- *  3. htmlmail.tpl.php
- *
- * Template files are cached, so remember to clear the cache by visiting
- * admin/settings/performance after changing any .tpl.php files.
- *
- * The following variables available in this template:
- *
- * $body
- *        The message body text.
- *
- * $module
- *        The first argument to [3]drupal_mail(), which is, by convention,
- *        the machine-readable name of the sending module.
- *
- * $key
- *        The second argument to [4]drupal_mail(), which should give some
- *        indication of why this email is being sent.
- *
- * $message_id
- *        The email message id, which should be equal to
- *        "{$module}_{$key}".
- *
- * $headers
- *        An array of email (name => value) pairs.
- *
- * $from
- *        The configured sender address.
- *
- * $to
- *        The recipient email address.
- *
- * $subject
- *        The message subject line.
- *
- * $body
- *        The formatted message body.
- *
- * $language
- *        The language object for this message.
- *
- * $params
- *        Any module-specific parameters.
- *
- * $template_name
- *        The basename of the active template.
- *
- * $template_path
- *        The relative path to the template directory.
- *
- * $template_url
- *        The absolute URL to the template directory.
- *
- * $theme
- *        The name of the Email theme used to hold template files. If the
- *        [5]Echo module is enabled this theme will also be used to
- *        transform the message body into a fully-themed webpage.
- *
- * $theme_path
- *        The relative path to the selected Email theme directory.
- *
- * $theme_url
- *        The absolute URL to the selected Email theme directory.
- *
- * $debug
- *        TRUE to add some useful debugging info to the bottom of the
- *        message.
- *
- * Other modules may also add or modify theme variables by implementing a
- * MODULENAME_preprocess_htmlmail(&$variables) [6]hook function.
- *
- * References
- *
- * 1. http://drupal.org/project/htmlmail
- * 2. http://drupal.org/project/htmlmail
- * 3. http://api.drupal.org/api/drupal/includes--mail.inc/function/drupal_mail/6
- * 4. http://api.drupal.org/api/drupal/includes--mail.inc/function/drupal_mail/6
- * 5. http://drupal.org/project/echo
- * 6. http://api.drupal.org/api/drupal/modules--system--theme.api.php/function/hook_preprocess_HOOK/7
- *
- * =========================================================== End instructions.
- */
-    $template_name = basename(__FILE__);
-    $current_path = realpath(NULL);
-    $current_len = strlen($current_path);
-    $template_path = realpath(dirname(__FILE__));
-    if (!strncmp($template_path, $current_path, $current_len)) {
-        $template_path = substr($template_path, $current_len + 1);
+<!-- Inliner Build Version 4380b7741bb759d6cb997545f3add21ad48f010b -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width" />
+</head>
+<body style="width: 100% !important; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 19px; font-size: 14px; margin: 0; padding: 0;"><style type="text/css">
+a:hover {
+    color: ##930406 !important;
+}
+a:active {
+    color: ##930406 !important;
+}
+a:visited {
+    color: ##930406 !important;
+}
+h1 a:active {
+    color: ##930406 !important;
+}
+h2 a:active {
+    color: ##930406 !important;
+}
+h3 a:active {
+    color: ##930406 !important;
+}
+h4 a:active {
+    color: ##930406 !important;
+}
+h5 a:active {
+    color: ##930406 !important;
+}
+h6 a:active {
+    color: ##930406 !important;
+}
+h1 a:visited {
+    color: ##930406 !important;
+}
+h2 a:visited {
+    color: ##930406 !important;
+}
+h3 a:visited {
+    color: ##930406 !important;
+}
+h4 a:visited {
+    color: ##930406 !important;
+}
+h5 a:visited {
+    color: ##930406 !important;
+}
+h6 a:visited {
+    color: ##930406 !important;
+}
+table.button:hover td {
+    background: #930406 !important;
+}
+table.button:visited td {
+    background: #930406 !important;
+}
+table.button:active td {
+    background: #930406 !important;
+}
+table.button:hover td a {
+    color: #fff !important;
+}
+table.button:visited td a {
+    color: #fff !important;
+}
+table.button:active td a {
+    color: #fff !important;
+}
+table.button:hover td {
+    background: #930406 !important;
+}
+table.tiny-button:hover td {
+    background: #930406 !important;
+}
+table.small-button:hover td {
+    background: #930406 !important;
+}
+table.medium-button:hover td {
+    background: #930406 !important;
+}
+table.large-button:hover td {
+    background: #930406 !important;
+}
+table.button:hover td a {
+    color: #ffffff !important;
+}
+table.button:active td a {
+    color: #ffffff !important;
+}
+table.button td a:visited {
+    color: #ffffff !important;
+}
+table.tiny-button:hover td a {
+    color: #ffffff !important;
+}
+table.tiny-button:active td a {
+    color: #ffffff !important;
+}
+table.tiny-button td a:visited {
+    color: #ffffff !important;
+}
+table.small-button:hover td a {
+    color: #ffffff !important;
+}
+table.small-button:active td a {
+    color: #ffffff !important;
+}
+table.small-button td a:visited {
+    color: #ffffff !important;
+}
+table.medium-button:hover td a {
+    color: #ffffff !important;
+}
+table.medium-button:active td a {
+    color: #ffffff !important;
+}
+table.medium-button td a:visited {
+    color: #ffffff !important;
+}
+table.large-button:hover td a {
+    color: #ffffff !important;
+}
+table.large-button:active td a {
+    color: #ffffff !important;
+}
+table.large-button td a:visited {
+    color: #ffffff !important;
+}
+table.secondary:hover td {
+    background: #d0d0d0 !important; color: #555;
+}
+table.secondary:hover td a {
+    color: #555 !important;
+}
+table.secondary td a:visited {
+    color: #555 !important;
+}
+table.secondary:active td a {
+    color: #555 !important;
+}
+table.success:hover td {
+    background: #457a1a !important;
+}
+table.alert:hover td {
+    background: #970b0e !important;
+}
+table.facebook:hover td {
+    background: #2d4473 !important;
+}
+table.twitter:hover td {
+    background: #0087bb !important;
+}
+table.google-plus:hover td {
+    background: #CC0000 !important;
+}
+@media only screen and (max-width: 600px) {
+    table[class="body"] img {
+        width: auto !important; height: auto !important;
     }
-    $template_url = url($template_path, array('absolute' => TRUE));
-?>
-<html>
-    <head>
-        <style type="text/css">
-            <!--
-            <?php print $css ?>
-            -->
-        </style>
-    </head>
-    <body>
-        <div class="htmlmail-body">
-            <?php echo $body; ?>
-        </div>
-        <?php if ($debug):
-            $module_template = str_replace('_', '-', "htmlmail-$module.tpl.php");
-            $message_template = str_replace('_', '-', "htmlmail-$message_id.tpl.php");
-        ?>
-        <hr/>
-        <div class="htmlmail-debug">
-            <dl>
-                <dt>
-                    <p>To customize this message:</p>
-                </dt>
-                <dd>
-                    <ol>
-                        <li>
-                            <p>
-                                <?php if (empty($theme)): ?>
-                                Visit <u>admin/settings/htmlmail</u>
-                                and select a theme to hold your custom email template files.
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <?php elseif (empty($theme_path)): ?>
-                                Visit <u>admin/build/themes</u>
-                                to enable your selected
-                                <u><?php echo drupal_ucfirst($theme); ?></u> theme.
-                            </p>
-                        </li>
-                        <li>
-                            <?php endif; if ("$template_path/$template_name" == "$theme_path/$message_template"): ?>
-                            <p>
-                                Edit your<br/>
-                                <code><?php echo "$template_path/$template_name"; ?></code>
-                                <br/>file.
-                            </p>
-                        </li>
-                        <li>
-                            <?php else: if (!file_exists("$theme_path/htmlmail.tpl.php")): ?>
-                            <p>
-                                Copy<br/>
-                                <code><?php echo "$module_path/htmlmail.tpl.php"; ?></code>
-                                <br/>to<br/>
-                                <code><?php echo "$theme_path/htmlmail.tpl.php"; ?></code>
-                            </p>
-                        </li>
-                        <li>
-                            <?php endif; if (!file_exists("$theme_path/$module_template")): ?>
-                            <p>
-                                For module-specific customization, copy<br/>
-                                <code><?php echo "$module_path/htmlmail.tpl.php"; ?></code>
-                                <br/>to<br/>
-                                <code><?php echo "$theme_path/$module_template"; ?></code>
-                            </p>
-                        </li>
-                        <li>
-                            <?php endif; if (!file_exists("$theme_path/$message_template")): ?>
-                            <p>
-                                For message-specific customization, copy<br/>
-                                <code><?php echo "$module_path/htmlmail.tpl.php"; ?></code>
-                                <br/>to<br/>
-                                <code><?php echo "$theme_path/$message_template"; ?></code>
-                            </p>
-                        </li>
-                        <li>
-                            <?php endif; ?>
-                            <p>Edit the copied file.</p>
-                        </li>
-                        <li>
-                            <?php endif; ?>
-                            <p>Send a test message to make sure your customizations worked.</p>
-                        </li>
-                        <li>
-                            <p>If you think your customizations would be of use to others, please contribute your file as a feature request in the <a href="http://drupal.org/node/add/project-issue/htmlmail">issue queue</a>.</p>
-                        </li>
-                    </ol>
-                </dd>
-                <?php if (!empty($params)): ?>
-                    <dt>
-                    <p>The <?php echo $module; ?> module sets the <code>$params</code> variable.  For this message,</p>
-                    </dt>
-                    <dd>
-                        <p>
-                            <code>
-                                <pre>$params = <?php echo check_plain(print_r($params, 1)); ?></pre>
-                            </code>
-                        </p>
-                    </dd>
-                <?php endif; ?>
-            </dl>
-        </div>
-        <?php endif; ?>
-    </body>
-</html>
+    table[class="body"] center {
+        min-width: 0 !important;
+    }
+    table[class="body"] .container {
+        width: 95% !important;
+    }
+    table[class="body"] .row {
+        width: 100% !important; display: block !important;
+    }
+    table[class="body"] .wrapper {
+        display: block !important; padding-right: 0 !important;
+    }
+    table[class="body"] .columns {
+        table-layout: fixed !important; float: none !important; width: 100% !important; padding-right: 0px !important; padding-left: 0px !important; display: block !important;
+    }
+    table[class="body"] .column {
+        table-layout: fixed !important; float: none !important; width: 100% !important; padding-right: 0px !important; padding-left: 0px !important; display: block !important;
+    }
+    table[class="body"] .wrapper.first .columns {
+        display: table !important;
+    }
+    table[class="body"] .wrapper.first .column {
+        display: table !important;
+    }
+    table[class="body"] table.columns td {
+        width: 100% !important;
+    }
+    table[class="body"] table.column td {
+        width: 100% !important;
+    }
+    table[class="body"] td.offset-by-one {
+        padding-left: 0 !important;
+    }
+    table[class="body"] td.offset-by-two {
+        padding-left: 0 !important;
+    }
+    table[class="body"] td.offset-by-three {
+        padding-left: 0 !important;
+    }
+    table[class="body"] td.offset-by-four {
+        padding-left: 0 !important;
+    }
+    table[class="body"] td.offset-by-five {
+        padding-left: 0 !important;
+    }
+    table[class="body"] td.offset-by-six {
+        padding-left: 0 !important;
+    }
+    table[class="body"] td.offset-by-seven {
+        padding-left: 0 !important;
+    }
+    table[class="body"] td.offset-by-eight {
+        padding-left: 0 !important;
+    }
+    table[class="body"] td.offset-by-nine {
+        padding-left: 0 !important;
+    }
+    table[class="body"] td.offset-by-ten {
+        padding-left: 0 !important;
+    }
+    table[class="body"] td.offset-by-eleven {
+        padding-left: 0 !important;
+    }
+    table[class="body"] .expander {
+        width: 9999px !important;
+    }
+    table[class="body"] .right-text-pad {
+        padding-left: 10px !important;
+    }
+    table[class="body"] .text-pad-right {
+        padding-left: 10px !important;
+    }
+    table[class="body"] .left-text-pad {
+        padding-right: 10px !important;
+    }
+    table[class="body"] .text-pad-left {
+        padding-right: 10px !important;
+    }
+    table[class="body"] .hide-for-small {
+        display: none !important;
+    }
+    table[class="body"] .show-for-desktop {
+        display: none !important;
+    }
+    table[class="body"] .show-for-small {
+        display: inherit !important;
+    }
+    table[class="body"] .hide-for-desktop {
+        display: inherit !important;
+    }
+    table[class="body"] .right-text-pad {
+        padding-left: 10px !important;
+    }
+    table[class="body"] .left-text-pad {
+        padding-right: 10px !important;
+    }
+}
+</style>
+<table class="body" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; height: 100%; width: 100%; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="center" align="center" valign="top" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: center; padding: 0;">
+            <center style="width: 100%; min-width: 580px;">
+                <table class="container" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: inherit; width: 580px; margin: 20px 0 auto; padding: 0;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; padding: 0;" align="left" valign="top">
+                            <!-- content start -->
+                            <table class="row content" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; position: relative; display: block; background: #f5f5f5; padding: 0px; border: 1px solid #cdcdcd;" bgcolor="#f5f5f5"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="wrapper last" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; padding: 10px 0px 0px;" align="left" valign="top">
+                                        <table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 580px; margin: 0 auto; padding: 0;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; padding: 16px;" align="left" valign="top">
+                                                    <img width="371" height="53" src="http://dev.cardcoaches.net/sites/default/files/logo_cc_0.png" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto; max-width: 100%; float: left; clear: both; display: block;" align="left" /></td>
+                                                <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; padding: 0;" align="left" valign="top"></td>
+                                            </tr></table></td>
+                                </tr></table><table class="row content" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; position: relative; display: block; background: #f5f5f5; padding: 0px; border: 1px solid #cdcdcd;" bgcolor="#f5f5f5"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="wrapper last" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; padding: 10px 0px 0px;" align="left" valign="top">
+                                        <table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 580px; margin: 0 auto; padding: 0;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; padding: 16px;" align="left" valign="top">
+                                                    <h1 style="color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 1.3; word-break: normal; font-size: 28px; margin: 0; padding: 0;" align="left"><?php echo $subject; ?></h1>
+                                                    <p class="lead" style="color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 19px; font-size: 14px; margin: 0; padding: 0 0 10px;" align="left">
+                                                        <?php echo $body; ?></p>
+                                                    <p class="footer" style="border-top-style: solid; border-top-color: #cdcdcd; border-top-width: 1px; color: #afafaf; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 19px; font-size: 14px; margin: 32px 0 0; padding: 24px 0 0;" align="left">
+                                                        Freundliche Grüße<br />
+                                                        Ihr CardCoaches-Team
+                                                    </p>
+                                                </td>
+                                                <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; padding: 0;" align="left" valign="top"></td>
+                                            </tr></table></td>
+                                </tr></table><table class="row" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; position: relative; display: block; padding: 0px;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="wrapper last" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; padding: 10px 0px 0px;" align="left" valign="top">
+                                        <table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 580px; margin: 0 auto; padding: 0;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td align="center" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; padding: 16px;" valign="top">
+                                                    <p style="color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 19px; font-size: 14px; margin: 0; padding: 0 0 10px;" align="left">
+                                                        <small style="font-size: 10px;">
+                                                            <center style="width: 100%; min-width: 580px;">
+                                                                Bitte antworten Sie nicht auf diese E-Mail. Sie können uns unter <a href="mailto:info@cardcoaches.com" style="color: #930406; text-decoration: none;">info@cardcoaches.com</a> erreichen.<br />
+                                                                Um den Newsletter abzubestellen oder die Häufigkeit der Übersendung zu ändern, hier <a href="#" style="color: #930406; text-decoration: none;">klicken </a>.
+                                                            </center>
+                                                        </small>
+                                                    </p>
 
+                                                </td>
+                                                <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; padding: 0;" align="left" valign="top"></td>
+                                            </tr></table></td>
+                                </tr></table><table class="row" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; position: relative; display: block; padding: 0px;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="wrapper last" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; padding: 10px 0px 0px;" align="left" valign="top">
+                                        <table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 580px; margin: 0 auto; padding: 0;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td align="center" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; padding: 16px;" valign="top">
+                                                    <p style="color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 19px; font-size: 14px; margin: 0; padding: 0 0 10px;" align="left">
+                                                        <small style="font-size: 10px;">
+                                                            <center style="width: 100%; min-width: 580px;">
+                                                                CARD COACHES GMBH<br />
+                                                                Nonnentaler Hauptstrasse 42j, 50200 Salzbug<br /><br />
+                                                                Sitz: Salzburg<br />
+                                                                Amtsgericht: Amtsgericht Salzburg Stadt<br />
+                                                                Firmenregister: FN 259437a<br />
+                                                                VAT-ID: ATU61607755<br /></center>
+                                                        </small>
+                                                    </p>
+                                                </td>
+                                                <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; padding: 0;" align="left" valign="top"></td>
+                                            </tr></table></td>
+                                </tr></table><!-- container end below --></td>
+                    </tr></table></center>
+        </td>
+    </tr></table></body>
+</html>
